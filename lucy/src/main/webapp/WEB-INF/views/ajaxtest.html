@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		$(function() {
+
+			$.ajax({
+				type : 'get',
+				url : 'ajaxtest.json',
+				dataType : 'json',
+				success : function(data) {
+					console.log("접속 성공");
+
+				}
+			});
+
+		});
+	</script>
+</body>
+</html>
